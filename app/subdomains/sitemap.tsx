@@ -1,8 +1,10 @@
 import { MetadataRoute } from 'next'
-//  import CityData1 from "@/public/City.json";
- import contentData from "@/components/Content/ContactInfo.json"
-import data from "@/components/Content/subDomainUrlContent.json";
 
+import contactContent from "@/app/Data/content";
+import subdomainContent from "@/app/Data/FinalContent";
+
+const contentData: any = contactContent.contactContent;
+const data: any = subdomainContent.subdomainData;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const SubDomain:any = Object.keys(data)
